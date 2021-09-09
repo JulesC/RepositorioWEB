@@ -216,7 +216,7 @@ body {
 ****************************************************************************************************************/
 /* ------- banner ------ */
 #imagenBanner {
-  margin-top: 50px;
+  margin-top: 35px;
   position: relative;
 }
 
@@ -308,15 +308,17 @@ body {
   /* tmb % */
   background-position: top left;
   background: url("../images/background1.jpg");
+  height: 950px;
 }
 
 #blog article {
-  margin: 15px;
+  margin: 5px;
 }
 
 #blog img {
   width: 100%;
   max-width: 280%;
+  height: 400px;
 }
 
 #blog img:hover {
