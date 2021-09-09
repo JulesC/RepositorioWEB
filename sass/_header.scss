@@ -1,0 +1,50 @@
+/* ------- LOGO DEL HEADER------ */
+.logoPagina{
+    margin-top: 1px;
+    float: left;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    zoom: 1;
+}
+.logoPagina{
+    &:hover{
+        transform: scale(0.6,0.6);
+        transition: all .5s ease;
+    }
+}
+
+/* ------- HEADER------ */
+header{
+    width: 100%;
+    height: 50px;
+    background: #7a8894;
+    color: white;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    z-index: 100;
+}
+header{ 
+    label{
+        float: right;
+        font-size: 28px;
+        margin: 6px 0;
+        cursor: pointer;
+    }
+}
+header{ 
+    .contenedor{
+        display: table;
+    }
+}
+header{ 
+    .contenedor{
+        h1{
+            font-family: 'Rajdhani', sans-serif;
+        }
+    }
+}
+.contenedor{
+    width: 98%;
+    margin: auto;
+}

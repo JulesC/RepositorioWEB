@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Metaetiquetas-->
+    <meta name="description" content="Club de lectura. Acceso a toda una bibioteca digital de autores actuales"/>
+    <meta name="keywords" content="libros, digital, biblioteca, lectura, leer, autores, suscripción, actualidad"/>
+    <!--Hoja de estilo-->
+    <link rel="stylesheet" href="../css/fontello.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <!--Fontawesome-->
+    <link rel="stylesheet" href="http://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Iceland&family=Rajdhani:wght@300&family=Vollkorn+SC&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
+    <!--W3chool frame-->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!--Bootstrap frame-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <!--Título-->
+    <title>Book | Suscribirme</title>
+</head>
+
+<body>
+    <header>
+        <div class="menuMenu">
+            <img class="logoPagina" src="../images/logo-v.jpg" alt="logo">
+            <input type="checkbox" id="menuBar">
+            <label class="icon-menu" for="menuBar"></label>
+            <nav class="menu">
+                <a href="../index.html" target="_blank" class="w3-bar-item w3-button w3-padding-16 w3-mobile"
+                    class="glyphicon glyphicon-home"><i class="fas fa-home"></i> Inicio</a>
+            </nav>
+        </div>
+    </header>
+    <div class="container w-75 p-5 rounded shadow">
+        <div class="row align-items-stretch">
+            <div class="col imagen d-none d-lg-block col-md-5 col-lg-5 col-xl-6 rounded">
+            </div>
+            <div class="col bg-white p-5 rounded-end">
+                <div class="text-end">
+                    <img src="../images/logo-v.jpg" width="58" alt="Logo">
+                </div>
+                <h2 class="fw-bold text-center py-5">LogIn</h2>
+                <!--LOGIN-->
+                <form action="">
+                    <div class="mb-4">
+                        <label for="usuario" class="form-label">Usuario:</label>
+                        <input class="form-control" id="usuario" type="text" placeholder="Introduzca usuario">
+                    </div>
+                    <div class="mb-4">
+                        <label for="contraseña" class="form-label">Contraseña:</label>
+                        <input class="form-control" id="contraseña" type="password" placeholder="Introduzca contraseña">
+                    </div>
+                    <div class="mb-4 form-check">
+                        <input type="checkbox" name="connected" class="form-check-input">
+                        <label for="connected" class="form-check-label">Mantenerme conectado</label>
+                    </div>
+                    <div class="d-grid">
+                        <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
+                    </div>
+                    <div class="my-3">
+                        <span>No tienes cuenta? <a href="#">Registrate</a></span>
+                        <span><a href="#">Recuperar contraseña</a></span>
+                    </div>
+                </form>
+                <!--LOGIN CON REDES SOCIALES-->
+                <div class="container w-100 my-5">
+                    <div class="row text-center">
+                        <div class="col-12">Iniciar Sesión</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <button class="btn btn-outline-primary w-100 my-1">
+                                <div class="row align-items-center">
+                                    <div class="col-2 d-none d-md-block">
+                                        <img src="../images/facebook.jpg" width="46" alt="Facebook">
+                                    </div>
+                                    <div class="col-12 col-md-10 text-center">
+                                        Facebook
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="col">
+                            <button class="btn btn-outline-danger w-100 my-1">
+                                <div class="row align-items-center">
+                                    <div class="col-2 d-none d-md-block">
+                                        <img src="../images/google.png" width="32" alt="Google">
+                                    </div>
+                                    <div id="clase" class="col-12 col-md-10 text-center">
+                                        Google
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+<!--<bootstarp-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+crossorigin="anonymous"></script>
+</body>
+</html>

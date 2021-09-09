@@ -1,0 +1,815 @@
+/*imports*/
+@import 'variables';
+@import 'header';
+@import 'menu';
+@import 'footer';
+@import 'mixin';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background: $image-bg;
+}
+/***************************************************************************************************************
+************************************************ HOME **********************************************************
+****************************************************************************************************************/
+/* ------- banner ------ */
+#imagenBanner{
+    margin-top: 50px;
+    position: relative;
+}
+#imagenBanner{
+     img{
+        width: 100%;
+        height: 100%;
+     }
+}
+#imagenBanner{
+    h2{
+        font-family: $font-txt-fam;
+    }
+}
+#imagenBanner{
+    .contenedor{
+        .btn-abrir-popup{
+            &:hover{
+                font-family: $font-txt-fam;
+                border-radius: (13px) / 2;
+            }
+        }
+    }
+}
+#imagenBanner{
+    .contenedor{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        color: white; 
+    }
+}
+#imagenBanner{
+    h2{
+        font-size: 28px;
+    }
+}
+#imagenBanner{
+    a{
+        display: block;
+        width: 100px;
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+        margin-top: 10px;
+        border: 3px solid white;
+    }
+}
+#imagenBanner{
+     a{
+        &:hover{
+            background: rgba(61, 104, 121,0.5);
+        }
+    }
+}
+#bienvenidos{
+    text-align: center;
+}
+#bienvenidos{
+    h2{
+        font-family: $font-txt-fam;
+        font-weight: 700; 
+        font-size: 32px;
+    }
+}
+#bienvenidos{
+    p{
+        font-family: $font-txt-fam;
+        font-size: 17px;
+        font-weight: 600;
+    }
+}
+#blog{
+    h3{
+        @include titulosH3;
+        font-size: 60px;
+        padding: 8px;
+    }           
+}
+#blog{ 
+    .contenedor h4{
+        font-family: $font-txt-fam;
+        font-weight: 600;
+        text-align: center;
+        font-size: 20px;
+    }
+}
+#blog{ 
+    .contenedor{
+        padding: 10px;
+        display: flex;  
+        flex-wrap: wrap;
+        padding: auto;
+        justify-content: center;
+        background-repeat: no-repeat;
+        background-size: auto; /* tmb % */
+        background-position: top left;
+        background: $image-bg;
+    }
+}
+#blog{ 
+    article{
+        margin: 15px;
+    }
+}
+#blog{
+    img{
+        width: 100%;
+        max-width: 280%;
+        &:hover{
+            opacity: .5;
+            transform: scale(0.6,0.6);
+            transition: all 1.2s ease;   
+        }
+    }
+}
+
+/* ------- popup------ */
+.overlay{
+    background: rgba(0,0,0,.3);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left:0;
+    right: 0;
+    display: flex;  
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+}
+.overlay.active{
+        visibility: visible;
+}
+.popup{
+   background: #f8f8f8;
+   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+   border-radius: 3px;
+   font-style:'Montserrat', sans-serif;
+   padding: 20px;
+   text-align: center;
+   width: 400px;
+   transition: .3s ease all;
+   opacity: 0;
+}
+.popup{
+    .btn-cerrar-popup {
+        line-height: 16px;
+        display: block;
+        text-align: right;
+        color: #bbbbbb;
+        transition: .3s ease all;;
+        font-size: 16px;
+    }
+}
+.popup{ 
+    .btn-cerrar-popup{
+        &:hover {
+            color: black;
+        }
+    }
+}
+.popup{
+    h3{
+        font-weight: 300px;
+        margin-bottom: 10px;
+        font-size: 36px;
+    }
+}
+.popup{
+    form{
+        .btn-submit{
+            height: 40px;
+            line-height: 40px;
+            border: none;
+            color:#fff;
+            background: #5e7de3;
+            border-radius: 3px;
+            font-style:'Montserrat', sans-serif;
+            font-size: 16px;
+            cursor: pointer;
+            transition: .3s ease all;;
+            padding: 0 20px;
+        }
+    }
+  }
+.popup{
+    form{
+        .btn-submit{
+            &:hover{
+                background: rgba(94,125,227, .5);
+            }
+        }
+    }
+ }
+ .popup.active{opacity: 1;}
+
+ footer{
+    .offcanvas-body{
+        a{
+            @include piePag_siteM;
+        }
+    }
+}
+footer{
+    .d-flex{
+        @include piePag_siteM;     
+    }
+}
+.bg-footer{
+    background-image:  url("../images/background1.jpg");
+}
+
+/*-------- media querry para agregar los breakpoint a la página ------- */
+@media screen and (min-width:1024px){
+    .menu{
+        position: static;
+        width: auto;
+        height: auto;
+        transform: translateX(0%);
+        float: right;
+        display: flex;
+    }
+    .menu{
+        a{
+            border: none;
+        }
+    }
+    header{
+        label{
+            display: none;
+        }
+    }
+}
+@media screen and (min-width:1024px){
+    .contenedor{
+     width: 1000px;
+    } 
+}
+@media screen and (min-width:480px){
+    #imagenBanner{
+        h2{
+            font-size: 40px;
+        }
+    }
+    #imagenBanner{ 
+        a{
+            margin-top: 25px;
+        }
+    }
+}
+@media screen and (min-width:768px){
+    #imagenBanner {
+       height: 300px;
+       overflow: hidden;
+    }
+    #imagenBanner{
+        img{
+            margin-top: -100px;
+            height: auto;
+        }
+    }
+}
+@media screen and (min-width:1024px){
+    #imagenBanner{
+        img{
+            margin-top: -200px;
+        }
+    }
+}
+
+/***************************************************************************************************************
+************************************************ NOSOTROS ******************************************************
+****************************************************************************************************************/
+/* ------- Blog------ */
+#blogUs{
+    img{
+        position: fixed;
+        margin-top: 8%;
+        margin-right: 10%;
+        width: 10%;
+    }
+ }
+#blogUs{
+    .container{
+        background: $image-bg;
+        width: 60%;
+        height: 50%;
+        padding: 20px;
+        justify-content: center;
+        flex-wrap: wrap;
+        font-family: $font-txt-fam;
+        margin-top: 5%;
+    }
+}
+#blogUs{
+    .container{
+        h1{
+            font-size: 45px;
+            font-family: $font-txt-fam;
+            font-weight: 590;
+        }
+    }
+}
+#blogUs{
+    .container{
+        hr{
+            width: 50%;
+            margin-top: 3%;
+        }
+    }
+}
+#blogUs{
+    .container{
+        p{
+            padding-right: 55px;
+            position: static;
+            text-align: justify;
+            margin: 15px;
+            font-weight: 600;
+            font-family: $font-txt-fam;
+            overflow: hidden;
+        }
+    }
+}
+.container{
+    footer{
+        #piePagina{
+            font-weight: 600;
+            font-size: 13px;
+            margin-top: 20%;
+        }
+    }
+}
+/*-------- media querry para agregar los breakpoint a la página ------- */
+@media screen and (min-width:1024px){
+    .menu{
+        position: static;
+        width: auto;
+        height: auto;
+        transform: translateX(0%);
+        float: right;
+        display: flex;
+    }
+    .menu{
+        a{
+            border: none;
+        }
+    }
+    header{
+        label{
+            display: none;
+        }
+    }
+}
+
+/***************************************************************************************************************
+************************************************ TEMAS *********************************************************
+****************************************************************************************************************/
+ /*div de imágenes*/
+.containerImg {
+    margin-top: 4%;
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: rgb(53, 88, 122);
+    height: 500px;
+    justify-content: center;
+    border-radius: 5px;
+}
+.containerImg{
+     div {
+        margin: 10px;
+        text-align: center;
+        line-height: 75px;
+        font-size: 30px;
+        width: 400px;
+    }
+}
+/*imagenes de los div de cajas*/
+.cajaArtes {
+     background: url(../images/artes.jpg);
+     border-radius: $border-r;
+}
+.cajaBio {
+    background: url(../images/biografias.jpg);
+    border-radius: $border-r;
+}
+.cajaCiencias {
+     background: url(../images/ciencias.jpg);
+     border-radius: $border-r;
+}
+.cajaHist {
+    background: url(../images/historia.jpg);
+    border-radius: $border-r;
+}
+.cajaRev {
+    background: url(../images/revistas.jpg);
+    border-radius: $border-r;
+}
+.containerImg{
+     div{
+        &:hover {
+            transform: scale(0.9,0.9);
+            cursor: pointer;
+            transition: all .5s ease;
+        }
+    }
+}
+/*caja - artes*/
+.infoArtes {
+    /*realizo llamado al mixin de las cajas*/
+    @include cajasTemas;
+    top:50%;
+}
+.infoArtes{
+    &:after {
+      @include infoTemas;
+      right: -125px;
+    }
+}
+.cajaArtes{
+    &:hover{
+        .infoArtes {
+            /*realizo llamado al mixin de los hover*/
+           @include cajaTemas_hover;
+           left:-30px;
+        }
+    }
+}
+.cajaArtes{
+    &:hover{
+        .imagen{
+            img {
+                /*realizo llamado al mixin de las img*/
+                @include cajaTemas_img;
+             }
+        }
+    }
+}
+/*caja - biografías*/
+.infoBio {
+    /*realizo llamado al mixin de las cajas*/
+    @include cajasTemas;
+    top:30%;
+}
+.infoBio{
+    &:after {
+        /*realizo llamado al mixin de las info*/
+        @include infoTemas;
+        right: -120px;
+    }
+}
+.cajaBio{
+    &:hover{
+        .infoBio {
+           /*realizo llamado al mixin de los hover*/
+           @include cajaTemas_hover;
+           left:-70px;
+        }
+    }
+}
+.cajaBio{
+    &:hover{
+        .imagen{
+            img {
+                /*realizo llamado al mixin de las img*/
+                @include cajaTemas_img;
+            }
+        }
+    }
+}
+/*caja - ciencias*/
+.infoCiencias {
+    /*realizo llamado al mixin de las cajas*/
+    @include cajasTemas;
+    top:50%;
+}
+.infoCiencias{
+    &:after {
+        /*realizo llamado al mixin de las info*/
+        @include infoTemas;
+        right: -120px;
+    }
+}
+.cajaCiencias{
+    &:hover{
+        .infoCiencias {
+            /*realizo llamado al mixin de los hover*/
+            @include cajaTemas_hover;
+            left:-70px;
+        }
+    }
+}
+.cajaCiencias{
+    &:hover{ 
+        .imagen img {
+            /*realizo llamado al mixin de las img*/
+            @include cajaTemas_img;
+        }
+    }
+}
+/*caja - história*/
+.infoHist {
+    /*realizo llamado al mixin de las cajas*/
+    @include cajasTemas;
+    top:30%;
+}
+.infoHist{
+    &:after {
+        /*realizo llamado al mixin de las info*/
+        @include infoTemas;
+        right: -120px;
+    }
+}
+.cajaHist{
+    &:hover {
+        .infoHist {
+            /*realizo llamado al mixin de los hover*/
+            @include cajaTemas_hover;
+            left:-70px;
+        }
+    }
+}
+.cajaHist{
+    &:hover{
+        .imagen{
+             img {
+                /*realizo llamado al mixin de las img*/
+                @include cajaTemas_img;
+             }
+        }
+    }
+}
+/*caja - revistas*/
+.infoRev {
+    /*realizo llamado al mixin de las cajas*/
+    @include cajasTemas;
+    top:50%;
+}
+.infoRev{
+    &:after{
+        /*realizo llamado al mixin de las info*/
+        @include infoTemas;
+        right: -120px;
+    }
+}
+.cajaRev{
+    &:hover{
+        .infoRev{
+            /*realizo llamado al mixin de los hover*/
+            @include cajaTemas_hover;
+            left:-70px;
+        }
+    }
+}
+.cajaRev{
+    &:hover{ 
+        .imagen{
+            img {
+                /*realizo llamado al mixin de las img*/
+                @include cajaTemas_img;
+            }
+        }
+    }
+}
+.round {
+    border-radius: 50%;
+}
+/*-------- media querry para agregar los breakpoint a la página ------- */
+  @media screen and (min-width:1024px){
+    .menu{
+        position: static;
+        width: auto;
+        height: auto;
+        transform: translateX(0%);
+        float: right;
+        display: flex;
+    }
+    .menu{
+        a{
+            border: none;
+        }
+    }
+    header{
+        label{
+            display: none;
+        }
+    }
+}
+
+/*comienzo de newletters*/
+.newsletter {
+    color:#313437;
+    background-color:#fff;
+    padding:30px 0;
+}
+  
+.newsletter{
+    p {
+        color:#7d8285;
+        line-height:1.5;
+    }
+}
+  
+.newsletter {
+    h2 {
+        font-weight:bold;
+        margin-bottom:10px;
+        line-height:1.5;
+        padding-top:0;
+        margin-top:0;
+        color:inherit;
+        font-size:24px;
+    }
+}
+  
+.newsletter {
+    .intro {
+        max-width:500px;
+        margin:0 auto 20px;
+        font-size:16px;
+    }
+}
+  
+.newsletter {
+    .intro{
+        p {
+            margin-bottom:30px;
+        }
+    }
+}
+  
+.newsletter {
+    form {
+        justify-content:center;
+    }
+}
+  
+.newsletter {
+    form{ 
+        .form-control {
+            border:none;
+            border-radius:3px;
+            box-shadow:none;
+            outline:none;
+            color:inherit;
+            text-indent:9px;
+            height:45px;
+            margin-right:10px;
+            min-width:250px;
+            background:#eff1f4;
+        }
+    }
+}
+  
+.newsletter {
+    form {
+        .btn {
+            border:none;
+            background:none;
+            box-shadow:none;
+            text-shadow:none;
+            opacity:0.9;
+            text-transform:uppercase;
+            font-weight:bold;
+            font-size:13px;
+            letter-spacing:0.4px;
+            line-height:1;
+            padding:16px 32px;
+        }
+    }
+}
+  
+.newsletter {
+    form {
+        .btn{
+            &:hover {
+                opacity:1;
+            }
+        }
+    }
+}
+  
+.newsletter {
+    form {
+        .btn{
+            &:active {
+                transform:translateY(1px);
+            }
+        }
+    }
+}
+  
+.newsletter {
+    form {
+        .btn-primary {
+            color:#fff;
+            outline:none;
+            background-color:#055ada;
+        }
+    }
+}
+
+/***************************************************************************************************************
+************************************************ BLOG **********************************************************
+***************************************************************************************************************/
+.containerB {
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0,1fr));
+    grid-gap: 40px;
+}
+article {
+    grid-column: 4 / 12;
+    grid-row: 2;
+    padding: 30px;
+}
+.containerB{ 
+    aside{
+        h2{
+            @include piePag_siteM;
+            font-size: 40px;
+        }
+        p{
+            @include piePag_siteM;
+            font-size: 15px;
+        }
+        .card-body{
+            h5{
+                @include titulosH3;
+                font-size: 15px;
+            }
+        }
+    }
+    article {
+         p{ 
+            padding: 10px;
+            @include piePag_siteM;
+            font-size: 16px;
+            text-align: justify;
+        }
+        h1{
+            @include titulosH3;
+            padding: 10px;
+        }
+    }
+} 
+aside {
+    font-family: $font-txt-fam;
+    border-right: 1px solid #999;
+    grid-column: 1 / 4;
+    grid-row: 2;
+    text-align: justify;
+    padding: 10px;
+}
+.containerAside{
+    .mb-4{
+        @include RedesSoc;
+    }
+}
+.containerAside{
+    .mb-4{
+        a{
+            transition: all .5s ease;
+            font-size: 17px;
+            color: rgb(247, 246, 248);
+        }
+        .btn{
+            &:hover{
+                transform: scale(1.9,1.9);
+            }
+        }
+    }
+}
+
+/***************************************************************************************************************
+************************************************ DONAR *********************************************************
+****************************************************************************************************************/
+
+
+
+/***************************************************************************************************************
+************************************************ SUSCRIBIRME ***************************************************
+****************************************************************************************************************/
+body{
+    padding-top: 15px;
+    background-repeat: no-repeat;
+    background-size: auto; /* tmb % */
+    background-position: top left;
+    background: $image-bg;
+}
+.imagen{
+    background-image: url(../images/login.jpg);
+    background-position: center center;
+}

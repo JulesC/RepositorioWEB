@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Metaetiquetas-->
+    <meta name="description" content="Club de lectura. El mejor lugar para encontrar tus libros digitales" />
+    <meta name="keywords" content="libros, digital, biblioteca, lectura, leer, e-book" />
+    <!--Hoja de estilo-->
+    <link rel="stylesheet" href="./css/fontello.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <!--Fontawesome-->
+    <link rel="stylesheet" href="http://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!--Goggle fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel&family=Iceland&family=Rajdhani:wght@300&family=Vollkorn+SC&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
+    <!--W3choolL frame-->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!--Bootstarop frame-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <!--Título-->
+    <title>Book Club de Lectura | Inicio</title>
+</head>
+
+<body>
+    <header>
+        <div class="contenedor">
+            <img class="logoPagina" src="./images/logo-v.jpg" alt="logo">
+            <h1> Un mundo lleno de Lectura</h1>
+            <input type="checkbox" id="menuBar">
+            <label class="icon-menu" for="menuBar"></label>
+            <nav class="menu">
+                <a href="./pages/nosotros.html" target="_blank" class="w3-bar-item w3-button w3-padding-16 w3-mobile"
+                    class="glyphicon glyphicon-home"><i class="fas fa-home"></i> Nosotros</a>
+                <a href="./pages/temas.html" target="_blank" class="w3-bar-item w3-button w3-padding-16 w3-mobile"><i
+                        class="fas fa-book-open"></i> Temas</a>
+                <a href="./pages/blog.html" target="_blank" class="w3-bar-item w3-button w3-padding-16 w3-mobile"><i
+                        class="far fa-bookmark"></i> Blog</a>
+                <a href="./pages/donar.html" target="_blank" class="w3-bar-item w3-button w3-padding-16 w3-mobile"><i
+                        class="fas fa-binoculars"></i> Donar</a>
+                <a href="./pages/suscribirme.html" target="_blank"
+                    class="w3-bar-item w3-button w3-padding-16 w3-mobile"><i class="fas fa-plus"></i>
+                    Suscribirme</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="imagenBanner">
+            <img src="./images/banner.jpg" alt="imagen">
+            <div class="contenedor">
+                <h2>Donde te comparto mis libros digitales...</h2>
+                <p>¿eres apasioado por la lectura?</p>
+                <button class="btn-abrir-popup btn btn-primary" id="btn-abrir-popup">Leer mas</button>
+            </div>
+        </section>
+        <section id="bienvenidos">
+            <h2>BIENVENIDOS A NUESTRO CLUB</h2>
+            <p> En los últimos años, el hábito de lectura ha tenido una profunda transformación que está obligando a
+                adaptarse a nuevos formatos y a nuevas rutinas.
+                Es poreso que proponemos una forma distinta de accesar a las últimas tendencias en literatura, conocer
+                nuevos autores o reencontrarse con aquellos que ya leimos.!</p>
+        </section>
+        <section id="blog">
+            <h3>Lo último de nuestro Blog</h3>
+            <div class="contenedor">
+                <article>
+                    <img src="./images/imagen1.1.jpg" alt="blog">
+                    <h4>La lectura durante la pandemia</h4>
+                </article>
+                <article>
+                    <img src="./images/imagen2.2.jpg" alt="blog">
+                    <h4>E-books una opción de lectura</h4>
+                </article>
+                <article>
+                    <img src="./images/imagen3.3.jpg" alt="blog">
+                    <h4>Lee un libro</h4>
+                </article>
+                <article>
+                    <img src="./images/imagen4.4.png" alt="blog">
+                    <h4>Beneficios de la Lectura</h4>
+                </article>
+            </div>
+        </section>
+        <footer>
+            <div class="redesSociales">
+                <a href="#" class="Whatsapp"><i class="fab fa-whatsapp"></i></a>
+                <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+                <!--declaro botón dentro del footer para ver Mapa del sitio-->
+                <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom"><i
+                        class="fas fa-globe-americas"></i></button>
+            </div>
+            <div class="offcanvas offcanvas-bottom bg-light" tabindex="-1" id="offcanvasBottom"
+                aria-labelledby="offcanvasBottomLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasBottomLabel"><i class="fas fa-globe-americas"> Mapa del Sitio</i></h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body small bg-footer rounded-start border border-3">
+                    <img class="logoSite" src="./images/logo-v.jpg" alt="logo">
+                    <!--Lista del sitemap-->
+                    <ul class="nav justify-content-end">
+                        <li class="nav-item"><a class="nav-link" href="#">Nosotros</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">Temas</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Sugerir tema</a></li>
+                            </ul>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">Blog</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Sugerir Artículo</a></li>
+                            </ul>
+                        <li class="nav-item"><a class="nav-link" href="#">Donar</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Suscribirse</a></li>
+                        <!--campo buscar en el sitemap-->
+                        <form class="d-flex">
+                            <input class="form-control mr-2" type="search" placeholder="Buscar" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Buscar</button>
+                        </form>
+                    </ul>
+                    <hr>
+                </div>
+                <!--Aqui comienza pie de página y redes sociales-->
+                <address class="tooltipTol">
+                    Realizado por <span class="tooltipText">Contáctame</span><strong><a
+                            href="mailto:miproyecto@coderhouse.com.ar">Julio Luna</a></strong>. Buenos
+                    Aires, Argentina. © 2021 Todos los derechos reservados.
+                </address>
+            </div>
+        </footer>
+        <!--Aqui comienza el POPUP  del home-->
+        <div class="overlay" id="overlay">
+            <div class="popup" id="popup">
+                <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
+                <h3>SUSCRIBIRME</h3>
+                <form action="#">
+                    <input type="submit" class="btn-submit" value="Ok!">
+                </form>
+            </div>
+        </div>
+    </main>
+    <!--archico .js-->
+    <script src="./js/popup.js"></script>
+    <!--<bootstarp-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
