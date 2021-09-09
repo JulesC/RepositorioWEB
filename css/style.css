@@ -99,6 +99,7 @@ section {
 footer {
   width: 100%;
   cursor: pointer;
+  margin-top: 0px;
 }
 
 footer .redesSociales {
