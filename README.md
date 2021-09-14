@@ -27,6 +27,6 @@ impactos culturales según sus “lecturas”.
 - Integración de la Dase de Datos
 
 ## Contacto
-Julio Luna
-Link del Proyecto: https://github.com/JulesC/RepositorioWEB
+- Julio Luna
+- Link del Proyecto: https://github.com/JulesC/RepositorioWEB
 
