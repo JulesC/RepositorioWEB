@@ -420,6 +420,11 @@ footer{
     background: url(../images/revistas.jpg);
     border-radius: $border-r;
 }
+.cajaGal {
+    background: url(../images/galeria.jpg);
+    border-radius: $border-r;
+}
+
 .containerImg{
      div{
         &:hover {
@@ -577,6 +582,38 @@ footer{
     }
 }
 .cajaRev{
+    &:hover{ 
+        .imagen{
+            img {
+                /*realizo llamado al mixin de las img*/
+                @include cajaTemas_img;
+            }
+        }
+    }
+}
+/*caja - galeria*/
+.infoGal {
+    /*realizo llamado al mixin de las cajas*/
+    @include cajasTemas;
+    top:30%;
+}
+.infoGal{
+    &:after{
+        /*realizo llamado al mixin de las info*/
+        @include infoTemas;
+        right: -120px;
+    }
+}
+.cajaGal{
+    &:hover{
+        .infoGal{
+            /*realizo llamado al mixin de los hover*/
+            @include cajaTemas_hover;
+            left:-70px;
+        }
+    }
+}
+.cajaGal{
     &:hover{ 
         .imagen{
             img {
