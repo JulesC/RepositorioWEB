@@ -1,4 +1,4 @@
-# Proyecto Desarrollo WEB - Club_DeLectura
+# Proyecto Desarrollo WEB - ClubDeLectura
 "El mejor lugar para encontrar tus libros digitales."
 
 ## Descripción
