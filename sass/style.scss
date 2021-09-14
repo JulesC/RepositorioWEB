@@ -852,3 +852,13 @@ body{
     background-image: url(../images/login.jpg);
     background-position: center center;
 }
+.container{
+    a{
+        font-family: $font-txt-fam;
+        text-decoration: none;
+    }
+    .col-12, h2, label, span, input, button{
+        font-family: $font-txt-fam;
+        font-weight: 700;
+    }
+}

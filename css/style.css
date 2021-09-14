@@ -1169,4 +1169,14 @@ body {
   background-image: url(../images/login.jpg);
   background-position: center center;
 }
+
+.container a {
+  font-family: "Rajdhani", sans-serif;
+  text-decoration: none;
+}
+
+.container .col-12, .container h2, .container label, .container span, .container input, .container button {
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 700;
+}
 /*# sourceMappingURL=style.css.map */
