@@ -1176,4 +1176,46 @@ body {
   font-family: "Rajdhani", sans-serif;
   font-weight: 700;
 }
+
+/***************************************************************************************************************
+************************************************ GALERIA *******************************************************
+****************************************************************************************************************/
+.galeria {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 10px 20px;
+  margin-top: 30px;
+}
+
+.columna {
+  -webkit-box-flex: 20%;
+      -ms-flex: 20%;
+          flex: 20%;
+  max-width: 20%;
+  padding: 0 4px;
+}
+
+.columna img {
+  margin-top: 20px;
+  vertical-align: middle;
+  width: 100%;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.columna img:hover {
+  -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+  cursor: pointer;
+  border: solid white 3px;
+}
 /*# sourceMappingURL=style.css.map */
