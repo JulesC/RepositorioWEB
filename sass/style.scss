@@ -291,6 +291,11 @@ footer{
         }
     }
 }
+footer{ 
+    .offcanvas{
+        height: 400px;
+    }
+}
 
 /***************************************************************************************************************
 ************************************************ NOSOTROS ******************************************************
@@ -428,9 +433,11 @@ footer{
 .containerImg{
      div{
         &:hover {
-            transform: scale(0.9,0.9);
-            cursor: pointer;
+            transform: scale(0.9,0.9);           
             transition: all .5s ease;
+        }
+        a{
+            text-decoration: none
         }
     }
 }
